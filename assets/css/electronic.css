@@ -1,0 +1,125 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;  
+  background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
+  color: white;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  width: 1280px;
+  margin: 20px auto;
+}
+.container > h3 {
+  font-size: 50px;
+}
+
+.productList {
+  background: gray;
+  font-size: 24px;
+  list-style: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.productList input[type="radio"]{
+  accent-color: red;
+}
+
+.Payment{
+  font-size: 20px;
+  background-color: azure;
+  color: black;
+  margin-block: 20px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.satis{
+  background-color: gray;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h6{
+  font-size: 30px;
+}
+
+fieldset {
+  background: gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+fieldset input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+fieldset button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+legend {
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+.productEditControls svg{
+  width: 20px;
+}
+
+
+
+label:has(:disabled) {
+  text-decoration: line-through;
+}
+
+.formInRow {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 10px;
+}
+
+.formInRow > * {
+  width: 100%;
+}
+label:has(:disabled) {
+  text-decoration: line-through;
+}
+
+.formInRow {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 10px;
+}
+
+.formInRow>* {
+  width: 100%;
+}

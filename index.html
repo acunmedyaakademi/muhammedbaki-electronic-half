@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satış Uygulaması</title>
+  <link rel="stylesheet" href="assets/css/electronic.css">
+  <script src="assets/js/electronic.js" defer></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <h3>Elektronik Ürünler</h3>
+  <form id="salesForm">
+    <ul id="productList" class="productList"></ul>
+    <p class="Payment">
+      Ödeme Türü
+      <label><input checked required type="radio" name="paymentType" value="1"> Kredi Kartı</label>
+    </p>
+    <button class="satis">Satış Yap</button>
+  </form>
+
+  <h6>Toplam Satış: <span id="salesTotal">0</span> TL</h6>
+
+  <h3>Stok</h3>
+
+  <fieldset>
+    <legend>Ürün Ekle</legend>
+    <form id="newProductForm" class="formInRow">
+      <input required name="name" type="text" placeholder="Ürün Adı">
+      <input required name="icon" type="text" placeholder="icon">
+      <input required name="price" type="number" placeholder="Fiyat">
+      <input required name="stock" type="number" placeholder="Stok">
+      <input required name="kategori" type="text" placeholder="kategori">
+      <button>Ekle</button>
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>Ürün Güncelle</legend>
+    <form id="editProductForm" class="formInRow">
+      <input required name="name" type="text" placeholder="Ürün Adı">
+      <input required name="icon" type="text" placeholder="icon">
+      <input required name="price" type="number" placeholder="Fiyat">
+      <input required name="stock" type="number" placeholder="Stok">
+      <button>Düzenle</button>
+      <button id="deleteBtn">Sil</button>
+    </form>
+  </fieldset></div>
+</body>
+
+</html>
